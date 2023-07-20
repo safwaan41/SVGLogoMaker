@@ -22,8 +22,18 @@ const questions = [
         type: `input`,
         message: `What color would you like your logo to be? (You can also enter hex color codes)`
     }
+    ,    
+    {
+        name: `colorText`,
+        type: `input`,
+        message: `What color would you like your text to be? (You can also enter hex color codes)`
+    }
 ]
+
 inquirer.prompt(questions)
 .then(answers =>{
-    fs.writeFile(`./examples/output.svg`,)
+    
+
+    fs.writeFile(`./examples/output.svg`, JSON.stringify(answers), (err) =>
+    err ? console.error(err) : console.log('Success!') )
 });
