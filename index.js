@@ -1,6 +1,6 @@
 const inquirer = require (`inquirer`);
 const fs = require (`fs`);
-
+const {Square, Circle, Triangle} = require (`./lib/shapes`);
 const questions = [
     // questions to prompt user for desired output 
     {
@@ -24,16 +24,34 @@ const questions = [
     }
     ,    
     {
-        name: `colorText`,
+        name: `textColor`,
         type: `input`,
         message: `What color would you like your text to be? (You can also enter hex color codes)`
     }
 ]
 
 inquirer.prompt(questions)
-.then(answers =>{
-    
 
-    fs.writeFile(`./examples/output.svg`, JSON.stringify(answers), (err) =>
+.then(answers =>{
+    // console.log(answers)
+    if (answers.shape == `Square`) {
+        let shape = new Square (answers.color, answers.letters, answers.textColor, answers.shape)
+
+    fs.writeFile(`./examples/output.svg`, shape.renderSvg(), (err) =>
     err ? console.error(err) : console.log('Success!') )
+    }
+    
+    if (answers.shape == `Circle`) {
+        let shape = new Circle (answers.color, answers.letters, answers.textColor, answers.shape)
+
+    fs.writeFile(`./examples/output.svg`, shape.renderSvg(), (err) =>
+    err ? console.error(err) : console.log('Success!') )
+    }
+
+    if (answers.shape == `Triangle`) {
+        let shape = new Triangle (answers.color, answers.letters, answers.textColor, answers.shape)
+
+    fs.writeFile(`./examples/output.svg`, shape.renderSvg(), (err) =>
+    err ? console.error(err) : console.log('Success!') )
+    }
 });
