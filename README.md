@@ -1,16 +1,26 @@
-# SVGLogoMaker
+# SVG Simple Logo Generator
+![badge](https://img.shields.io/badge/license-None-blue)
 
 
+## Table Of Contents
+- [Description](#description)
+- [Use](#use)
+- [License](#license)
+- [Questions](#questions)
+## Description
+This program can be used to demonstrate the functionality of a SVG file. It will generate a sample logo using basic shapes, text, and color 
 
-<svg version="1.1"
+## Use
+The best use of this project is to show how an SVG file can be far superior to a raster image because SVG is generated using vector lines implemented in a type script manner
 
-     width="300" height="200"
-     xmlns="http://www.w3.org/2000/svg">
+## License
+None
 
-  <rect width="100%" height="100%" fill="red" />
+## Questions
+If you have any questions, you can reach me at https://github.com/safwaan41 <br/>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<br/>
+<br/>
+or reach out to my email at safwaan41@gmail.com <br/>
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) <br/>
+### [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-  <circle cx="150" cy="100" r="80" fill="green" />
-
-  <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-</svg>
+    
