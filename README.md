@@ -13,6 +13,9 @@ This program can be used to demonstrate the functionality of a SVG file. It will
 ## Use
 The best use of this project is to show how an SVG file can be far superior to a raster image because SVG is generated using vector lines implemented in a type script manner
 
+## Video Link
+[LINK](chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/695f8866-e765-4998-y68a-3f97caec50ad)
+
 ## License
 None
 
